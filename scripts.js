@@ -21,9 +21,26 @@ fetch(url)
 	.then(function (data) {
     console.log(data)
     for(x = 0; x < data.length; x++) {
+
       var card = document.createElement('div')
-      card.textContent = data[x].name
+      card.setAttribute('class', 'card')
+
+      var header = document.createElement('h2')
+      var content = document.createElement('p')
+      
+      header.textContent = data[x].name
+      
+      var shortened = data[x].desc.substring(0, 300);
+      content.textContent = `${shortened}...`; 
+      
+  
+      
+      card.appendChild(header)
+      card.appendChild(content)
+      
       container.appendChild(card)
+
+
     }
 
     // each object in the array,
