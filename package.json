@@ -1,0 +1,15 @@
+{
+  "name": "travel_recs",
+  "version": "1.0.0",
+  "description": "experimenting with Trello API",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Freddie",
+  "license": "ISC"
+}
